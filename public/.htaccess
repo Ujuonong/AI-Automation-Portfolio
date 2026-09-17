@@ -1,0 +1,13 @@
+# Front controller — route everything through index.php (Apache clean URLs)
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # If the file or directory actually exists, serve it directly.
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Route everything else to the front controller.
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>

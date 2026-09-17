@@ -1,0 +1,1 @@
+<?php \Portfolio\Core\View::partial('errors/_body', ['status' => 419, 'title' => '419 — Page Expired', 'message' => $message ?? 'Your session token has expired. Please go back, refresh the page and try again.']); ?>

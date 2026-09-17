@@ -1,0 +1,1 @@
+<?php \Portfolio\Core\View::partial('errors/_body', ['status' => 403, 'title' => '403 — Forbidden', 'message' => 'You do not have permission to access this page.']); ?>

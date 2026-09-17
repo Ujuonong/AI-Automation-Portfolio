@@ -1,0 +1,1 @@
+<?php \Portfolio\Core\View::partial('errors/_body', ['status' => 404, 'title' => '404 — Page Not Found', 'message' => 'The page you are looking for could not be found.']); ?>

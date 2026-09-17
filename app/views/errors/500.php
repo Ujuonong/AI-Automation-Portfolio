@@ -1,0 +1,1 @@
+<?php \Portfolio\Core\View::partial('errors/_body', ['status' => 500, 'title' => '500 — Internal Server Error', 'message' => isset($message) && $message !== 'An unexpected error occurred. Please try again later.' ? $message : 'An unexpected error occurred. Please try again later.']); ?>

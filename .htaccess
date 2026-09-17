@@ -1,0 +1,14 @@
+# Root .htaccess — protect the application source from direct web access.
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Block common configuration files from being served.
+    <FilesMatch "\.(env|env\.example|gitignore|json|md|lock)$">
+        Require all denied
+    </FilesMatch>
+
+    # Deny web access to internal directories (PHP files, config, migrations, etc.).
+    RewriteRule ^(app|config|routes|database|storage|tests)(/|$) - [F,L]
+</IfModule>

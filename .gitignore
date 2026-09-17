@@ -1,0 +1,35 @@
+# Environment
+.env
+
+# Dependencies
+/vendor
+
+# Runtime
+/storage/logs/*
+/storage/uploads/*
+/public/uploads/*
+!/storage/logs/.gitkeep
+!/storage/uploads/.gitkeep
+!/public/uploads/.gitkeep
+
+# OS
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# PHP
+*.log
+
+# Database dumps (contain personal data - never publish)
+/portfolio_cms.sql
+/portfolio_cms_hosting.sql
+
+# Package artifacts (contain real .env credentials)
+*.zip
+/dejunong_portal
+
+# Old nested duplicate of the app (contains a data dump)
+/public/portfolio
